@@ -191,7 +191,7 @@ if (defined('ENVIRONMENT'))
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
 
-	include_once './vendor/autoload.php';
+	require('./vendor/autoload.php');
 
 /*
  * --------------------------------------------------------------------
