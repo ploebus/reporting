@@ -27,8 +27,9 @@
  * Different environments will require different levels of error reporting.
  * By default development will show errors but testing and live will hide them.
  */
-
-if (defined('ENVIRONMENT'))
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+/*if (defined('ENVIRONMENT'))
 {
 	switch (ENVIRONMENT)
 	{
@@ -45,7 +46,7 @@ if (defined('ENVIRONMENT'))
 			exit('The application environment is not set correctly.');
 	}
 }
-
+*/
 /*
  *---------------------------------------------------------------
  * SYSTEM FOLDER NAME
@@ -191,7 +192,7 @@ if (defined('ENVIRONMENT'))
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
 
-	require('./vendor/autoload.php');
+require('./vendor/autoload.php');
 
 /*
  * --------------------------------------------------------------------
