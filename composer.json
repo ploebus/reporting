@@ -1,8 +1,6 @@
 {
-  "require" : {
-    
-  },
-  "require-dev": {
-    "heroku/heroku-buildpack-php": "*"
-  }
+    "require": {
+        "php": ">=5.5.0",
+        "ext-gettext": "*"
+    }
 }
