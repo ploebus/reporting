@@ -1,52 +1,48 @@
 [
     {
-        "name": "kriswallsmith/buzz",
-        "version": "v0.15.1",
-        "version_normalized": "0.15.1.0",
+        "name": "heroku/heroku-buildpack-php",
+        "version": "v125",
+        "version_normalized": "125.0.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/kriswallsmith/Buzz.git",
-            "reference": "d59932b335c2f2f3ec9eee66a37db6bd50d39e13"
+            "url": "https://github.com/heroku/heroku-buildpack-php.git",
+            "reference": "880d625f715680aca2969562b8a5a69f4a289b7f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/d59932b335c2f2f3ec9eee66a37db6bd50d39e13",
-            "reference": "d59932b335c2f2f3ec9eee66a37db6bd50d39e13",
+            "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/880d625f715680aca2969562b8a5a69f4a289b7f",
+            "reference": "880d625f715680aca2969562b8a5a69f4a289b7f",
             "shasum": ""
         },
-        "require": {
-            "php": "^5.3.3 || ^7.0"
-        },
-        "require-dev": {
-            "symfony/phpunit-bridge": "^3.3"
-        },
-        "suggest": {
-            "ext-curl": "*"
-        },
-        "time": "2017-08-19T09:43:47+00:00",
+        "time": "2017-10-04T22:42:04+00:00",
+        "bin": [
+            "bin/heroku-hhvm-apache2",
+            "bin/heroku-hhvm-nginx",
+            "bin/heroku-php-apache2",
+            "bin/heroku-php-nginx"
+        ],
         "type": "library",
         "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Buzz\\": "lib/Buzz"
-            }
-        },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
         ],
         "authors": [
             {
-                "name": "Kris Wallsmith",
-                "email": "kris.wallsmith@gmail.com",
-                "homepage": "http://kriswallsmith.net/"
+                "name": "David Zuelke",
+                "email": "dz@heroku.com"
             }
         ],
-        "description": "Lightweight HTTP client",
-        "homepage": "https://github.com/kriswallsmith/Buzz",
+        "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
+        "homepage": "https://github.com/heroku/heroku-buildpack-php",
         "keywords": [
-            "curl",
-            "http client"
+            "apache",
+            "apache2",
+            "foreman",
+            "heroku",
+            "hhvm",
+            "nginx",
+            "php"
         ]
     }
 ]
